@@ -1,0 +1,282 @@
+{
+  "users": {
+    "1": {
+      "id": 1,
+      "username": "tej",
+      "email": "lo@gmail.com",
+      "hashed_password": "333758f925f076566f033ffec9eaa84bfb1597334226ac5a135f856c15eb8522",
+      "role": "teacher",
+      "created_at": "2026-03-24T07:56:32.073743"
+    },
+    "2": {
+      "id": 2,
+      "username": "teja",
+      "email": "t@gmail.com",
+      "hashed_password": "36984836e1a84773045b2617a2fc4f09ce1aa31bac496a9a39baede5d07f3ccf",
+      "role": "student",
+      "created_at": "2026-03-24T08:02:00.297231"
+    },
+    "3": {
+      "id": 3,
+      "username": "Bhavya",
+      "email": "b@gmail.com",
+      "hashed_password": "3436a667fbb8f88172841d27a08db141ec9562f95dc3124307fa6e928e219fea",
+      "role": "teacher",
+      "created_at": "2026-03-25T09:11:21.460172"
+    },
+    "4": {
+      "id": 4,
+      "username": "Bhavani",
+      "email": "bhavani@gmail.com",
+      "hashed_password": "5c3bdd3fe7992c2a48882fcf78dd84fc65c8467d41411ee58cbd2ac453e45c26",
+      "role": "student",
+      "created_at": "2026-03-25T09:25:08.798032"
+    },
+    "5": {
+      "id": 5,
+      "username": "Hanshu",
+      "email": "hanshu123@gmail.com",
+      "hashed_password": "9935d28df43a03be93935f332985eeb6a8fa65af0e8cd077f7a89194ab01cd8b",
+      "role": "student",
+      "created_at": "2026-09-21T16:20:51.626922"
+    },
+    "6": {
+      "id": 6,
+      "username": "Shree",
+      "email": "shree456@gmail.com",
+      "hashed_password": "73f8498998e03139a3d183d11d82d4590a3d228d0f6ca34c604e3945369f17bc",
+      "role": "student",
+      "created_at": "2026-09-21T16:21:43.558695"
+    },
+    "7": {
+      "id": 7,
+      "username": "Alexa",
+      "email": "alexa123@gmail.com",
+      "hashed_password": "d3a9f54db90036f18fb2a5eceff0b7b68631574a0cc6c0225cb390fae184db61",
+      "role": "student",
+      "created_at": "2026-09-21T16:34:15.443225"
+    },
+    "8": {
+      "id": 8,
+      "username": "Google",
+      "email": "google456@gmail.com",
+      "hashed_password": "173e06c881f3c7890de07027859fcd5edd54e90c1dc1fdd4aa7d9e2c9ba4e4a7",
+      "role": "teacher",
+      "created_at": "2026-09-21T16:34:55.547885"
+    },
+    "9": {
+      "id": 9,
+      "username": "Shalini",
+      "email": "shalini@gmail.com",
+      "hashed_password": "eec47d9891bc884ad0ca788dc063b9e0daedaf625591df82f28342ccc52eea9d",
+      "role": "teacher",
+      "created_at": "2026-09-22T12:18:08.868416"
+    }
+  },
+  "classrooms": {
+    "0DCR3U": {
+      "class_id": "0DCR3U",
+      "teacher_id": 1,
+      "name": "tej",
+      "created_at": "2026-03-24T07:56:41.188166",
+      "is_active": true
+    },
+    "KB8ZZE": {
+      "class_id": "KB8ZZE",
+      "teacher_id": 1,
+      "name": "one",
+      "created_at": "2026-03-24T08:00:59.971985",
+      "is_active": true
+    },
+    "KOW76F": {
+      "class_id": "KOW76F",
+      "teacher_id": 1,
+      "name": "social",
+      "created_at": "2026-03-24T08:11:34.146514",
+      "is_active": true
+    },
+    "39YHNW": {
+      "class_id": "39YHNW",
+      "teacher_id": 1,
+      "name": "maths",
+      "created_at": "2026-03-25T07:51:43.542591",
+      "is_active": true
+    },
+    "7N6ZF1": {
+      "class_id": "7N6ZF1",
+      "teacher_id": 1,
+      "name": "maths",
+      "created_at": "2026-03-25T07:53:13.841255",
+      "is_active": true
+    },
+    "F3TMP2": {
+      "class_id": "F3TMP2",
+      "teacher_id": 3,
+      "name": "Data Structures",
+      "created_at": "2026-03-25T09:12:22.798709",
+      "is_active": true
+    },
+    "WG66NX": {
+      "class_id": "WG66NX",
+      "teacher_id": 3,
+      "name": "Maths",
+      "created_at": "2026-03-25T09:21:41.308038",
+      "is_active": true
+    },
+    "WCMWMD": {
+      "class_id": "WCMWMD",
+      "teacher_id": 1,
+      "name": "maths",
+      "created_at": "2026-03-25T09:36:31.873358",
+      "is_active": true
+    },
+    "DW9LRS": {
+      "class_id": "DW9LRS",
+      "teacher_id": 8,
+      "name": "English",
+      "created_at": "2026-09-21T16:35:35.255877",
+      "is_active": true
+    },
+    "VN6WE7": {
+      "class_id": "VN6WE7",
+      "teacher_id": 8,
+      "name": "English",
+      "created_at": "2026-09-21T16:44:10.492122",
+      "is_active": true
+    },
+    "HW61L2": {
+      "class_id": "HW61L2",
+      "teacher_id": 8,
+      "name": "English",
+      "created_at": "2026-09-21T16:56:48.339087",
+      "is_active": true
+    },
+    "5Y201U": {
+      "class_id": "5Y201U",
+      "teacher_id": 8,
+      "name": "Maths",
+      "created_at": "2026-09-22T10:33:27.183650",
+      "is_active": true
+    },
+    "INVN52": {
+      "class_id": "INVN52",
+      "teacher_id": 8,
+      "name": "Social",
+      "created_at": "2026-09-22T10:39:39.928622",
+      "is_active": true
+    },
+    "VF19UC": {
+      "class_id": "VF19UC",
+      "teacher_id": 8,
+      "name": "Maths",
+      "created_at": "2026-09-22T10:42:53.901522",
+      "is_active": true
+    },
+    "B0PS6D": {
+      "class_id": "B0PS6D",
+      "teacher_id": 8,
+      "name": "cse",
+      "created_at": "2026-09-22T10:45:46.417873",
+      "is_active": true
+    },
+    "MFLY57": {
+      "class_id": "MFLY57",
+      "teacher_id": 8,
+      "name": "cse",
+      "created_at": "2026-09-22T10:47:40.510787",
+      "is_active": true
+    },
+    "IBG379": {
+      "class_id": "IBG379",
+      "teacher_id": 8,
+      "name": "chemistry",
+      "created_at": "2026-09-22T10:52:39.152674",
+      "is_active": true
+    },
+    "8WE0YO": {
+      "class_id": "8WE0YO",
+      "teacher_id": 8,
+      "name": "maths",
+      "created_at": "2026-09-22T10:56:27.868984",
+      "is_active": true
+    },
+    "H3YM02": {
+      "class_id": "H3YM02",
+      "teacher_id": 8,
+      "name": "maths",
+      "created_at": "2026-09-22T11:01:37.428501",
+      "is_active": true
+    },
+    "NLGF6W": {
+      "class_id": "NLGF6W",
+      "teacher_id": 8,
+      "name": "math",
+      "created_at": "2026-09-22T11:12:10.108782",
+      "is_active": true
+    },
+    "UVM9CX": {
+      "class_id": "UVM9CX",
+      "teacher_id": 8,
+      "name": "dance",
+      "created_at": "2026-09-22T11:15:25.824999",
+      "is_active": true
+    },
+    "PHMXQB": {
+      "class_id": "PHMXQB",
+      "teacher_id": 8,
+      "name": "dance",
+      "created_at": "2026-09-22T11:18:51.638917",
+      "is_active": true
+    },
+    "3DP0K2": {
+      "class_id": "3DP0K2",
+      "teacher_id": 8,
+      "name": "hiii",
+      "created_at": "2026-09-22T11:45:34.137628",
+      "is_active": true
+    },
+    "U2BKUT": {
+      "class_id": "U2BKUT",
+      "teacher_id": 8,
+      "name": "dbms",
+      "created_at": "2026-09-22T11:57:55.324651",
+      "is_active": true
+    },
+    "WFWOX2": {
+      "class_id": "WFWOX2",
+      "teacher_id": 8,
+      "name": "104",
+      "created_at": "2026-09-22T12:02:30.789361",
+      "is_active": true
+    },
+    "8F668H": {
+      "class_id": "8F668H",
+      "teacher_id": 8,
+      "name": "math",
+      "created_at": "2026-09-22T12:13:41.213904",
+      "is_active": true
+    },
+    "WGYQ78": {
+      "class_id": "WGYQ78",
+      "teacher_id": 9,
+      "name": "math",
+      "created_at": "2026-09-22T12:18:21.534005",
+      "is_active": true
+    },
+    "BGNIE4": {
+      "class_id": "BGNIE4",
+      "teacher_id": 9,
+      "name": "maths",
+      "created_at": "2026-09-22T12:45:55.577213",
+      "is_active": true
+    },
+    "07NK8R": {
+      "class_id": "07NK8R",
+      "teacher_id": 9,
+      "name": "maths",
+      "created_at": "2026-09-22T12:52:42.037077",
+      "is_active": true
+    }
+  },
+  "counter": 10
+}
