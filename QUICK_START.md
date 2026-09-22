@@ -1,75 +1,213 @@
 # 🚀 Quick Start Guide - Smart Virtual Classroom
 
-## 3-Step Setup
+## 1. Setup the Backend
 
-### 1️⃣ Install Backend Dependencies
-```bash
+Open a terminal in the project root folder:
+
+``` powershell
 cd backend
+python -m venv venv
+```
+
+Activate the virtual environment on Windows:
+
+``` powershell
+.\venv\Scripts\Activate.ps1
+```
+
+Install the backend dependencies:
+
+``` powershell
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Start Backend Server
-```bash
+Start the backend server:
+
+``` powershell
 python main.py
 ```
-✅ Backend runs on: http://localhost:8000
 
-### 3️⃣ Start Frontend (New Terminal)
-```bash
-cd frontend
-python -m http.server 5500
+Backend: `http://127.0.0.1:8000`
+
+Keep this terminal running.
+
+------------------------------------------------------------------------
+
+## 2. Setup the Frontend
+
+Open a **new terminal** in the project root folder:
+
+``` powershell
+cd frontend-react
+npm install
+npm run dev
 ```
-✅ Frontend runs on: http://localhost:5500
 
-## 🧪 Testing the Application
+Frontend: `http://127.0.0.1:5500`
 
-### Teacher Flow:
-1. Open http://localhost:5500
-2. Click "Register" → Select "Teacher" → Create account
-3. Create classroom with any name
-4. Share the generated Class ID with students
-5. Allow camera access when prompted
+Open the frontend URL in your browser.
 
-### Student Flow:
-1. Open http://localhost:5500 (new browser tab/window)
-2. Click "Register" → Select "Student" → Create account  
-3. Enter the Class ID from teacher
-4. Allow camera access when prompted
+------------------------------------------------------------------------
 
-### Test Focus Monitoring:
-1. As student, switch to another browser tab
-2. Warning appears on student screen
-3. Alert appears in teacher dashboard
-4. Focus score decreases by 5%
+## 3. Test the Application
 
-## ✅ Expected Behavior
+### Teacher Flow
 
-- **Video**: Both teacher and student cameras should appear
-- **Focus Alert**: Switching tabs triggers warning + teacher notification
-- **Real-time**: Teacher sees student focus scores update instantly
-- **Scoring**: Starts at 100%, decreases 5% per warning
+1.  Open the application.
+2.  Register as a **Teacher**.
+3.  Log in with the teacher account.
+4.  Create a classroom.
+5.  Note the generated **Class ID**.
+6.  Share the Class ID with students.
+7.  Monitor students from the teacher dashboard.
 
-## 🔧 Troubleshooting
+### Student Flow
 
-**Camera not working?**
-- Allow camera permissions in browser
-- Try Chrome (recommended browser)
+1.  Open the application.
+2.  Register as a **Student**.
+3.  Log in with the student account.
+4.  Enter the **Class ID** provided by the teacher.
+5.  Join the classroom.
+6.  Allow camera access when prompted.
 
-**Connection issues?**
-- Check both servers are running
-- Verify ports 8000 and 5500 are available
+------------------------------------------------------------------------
 
-**Database errors?**
-- Delete `classroom.db` file and restart backend
+## 4. Test Focus Monitoring
 
-## 🎯 Key Features to Test
+1.  Join a classroom as a student.
+2.  Switch to another browser tab.
+3.  A focus warning should be triggered.
+4.  The teacher should receive a focus-related alert.
+5.  The student's focus score should decrease.
+6.  The teacher can monitor the student's focus status.
 
-✅ User registration/login  
-✅ Classroom creation (teacher)  
-✅ Joining classroom (student)  
-✅ Video streaming  
-✅ Tab switch detection  
-✅ Real-time alerts  
-✅ Focus score tracking  
+The focus score starts at **100** and decreases by **5 points** for each
+focus warning.
 
-Ready to test! 🎓
+------------------------------------------------------------------------
+
+## 5. Main Features
+
+-   User registration and login
+-   Teacher and student roles
+-   Classroom creation and joining
+-   Class ID-based classroom access
+-   Camera/video interaction
+-   Student focus monitoring
+-   Focus alerts
+-   Focus score tracking
+-   Student strikes and warnings
+-   Student timeout/removal
+-   Classroom chat
+-   Real-time WebSocket communication
+
+------------------------------------------------------------------------
+
+## 6. Troubleshooting
+
+### Camera not working?
+
+-   Allow camera permissions in your browser.
+-   Make sure no other application is using the camera.
+-   Try using Google Chrome.
+
+### Frontend not starting?
+
+Make sure you are inside the `frontend-react` folder:
+
+``` powershell
+cd frontend-react
+npm install
+npm run dev
+```
+
+### Backend not starting?
+
+Make sure the virtual environment is activated:
+
+``` powershell
+cd backend
+.\venv\Scripts\Activate.ps1
+python main.py
+```
+
+### Connection issues?
+
+Make sure **both** servers are running:
+
+``` text
+Backend  → http://127.0.0.1:8000
+Frontend → http://127.0.0.1:5500
+```
+
+------------------------------------------------------------------------
+
+## 7. Project Structure
+
+``` text
+Smart-Classroom/
+├── backend/
+│   ├── main.py
+│   ├── db.json
+│   └── requirements.txt
+├── frontend-react/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── StudentDashboard.jsx
+│   │   │   └── TeacherDashboard.jsx
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── custom.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+├── .gitignore
+├── QUICK_START.md
+└── README.md
+```
+
+------------------------------------------------------------------------
+
+## 8. Technology Stack
+
+### Frontend
+
+-   React
+-   Vite
+-   JavaScript
+-   Bootstrap
+-   Bootstrap Icons
+-   Font Awesome
+
+### Backend
+
+-   Python
+-   FastAPI
+-   Uvicorn
+-   WebSockets
+-   JWT Authentication
+-   Pydantic
+-   JSON-based storage
+
+------------------------------------------------------------------------
+
+## 9. Important Notes
+
+-   Run the backend and frontend in separate terminals.
+-   Allow camera permissions when testing video features.
+-   The application currently uses `backend/db.json` for local data
+    storage.
+-   The virtual environment and `node_modules` should not be committed
+    to GitHub.
+-   Environment files such as `.env` are excluded through `.gitignore`.
+
+------------------------------------------------------------------------
+
+## Project Status
+
+This is an academic Smart Classroom project developed to demonstrate web
+application development, real-time communication, authentication,
+classroom management, and student focus monitoring.
